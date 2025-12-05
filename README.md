@@ -72,16 +72,6 @@ Modular C programming
 
 Error handling and boundary conditions
 
-📂 Project Structure
-
-📁 Arbitrary-Precision-Calculator
-│── main.c                // Menu and flow control
-│── operations.c          // Add, subtract, multiply, divide
-│── list.c                // Linked list creation & utilities
-│── list.h                // Header for list operations
-│── operations.h          // Header for arithmetic operations
-│── README.md             // Project documentation
-
 ▶️ How It Works
 🔸 Step 1: Input
 
