@@ -24,23 +24,33 @@ Handles numbers with any number of digits — even thousands — limited only by
 ✔ Core Arithmetic Operations
 
 Addition (digit-wise with carry)
+
 Subtraction (digit-wise with borrow)
+
 Multiplication (column-wise multiplication logic)
+
 Division (long-division algorithm)
 
 ✔ Data Structure Used
 
 Doubly Linked List for digit storage
+
 Each node stores a single digit
+
 Supports traversal from LSB → MSB and MSB → LSB
 
 ✔ Clean & Modular Architecture
 
 The program is split into functional modules for:
+
 Linked list creation & deletion
+
 Input handling
+
 Arithmetic operations
+
 Display utilities
+
 Menu-driven interface
 
 ✔ Linux & GCC Compatible
@@ -49,9 +59,57 @@ Designed and tested on Linux using the GCC compiler.
 🧠 Learning Outcomes
 
 Building this project strengthened understanding of:
+
 Pointer manipulation
+
 Dynamic memory allocation
+
 Custom big-number arithmetic logic
+
 Linked list traversal & operations
+
 Modular C programming
+
 Error handling and boundary conditions
+
+📂 Project Structure
+
+📁 Arbitrary-Precision-Calculator
+│── main.c                // Menu and flow control
+│── operations.c          // Add, subtract, multiply, divide
+│── list.c                // Linked list creation & utilities
+│── list.h                // Header for list operations
+│── operations.h          // Header for arithmetic operations
+│── README.md             // Project documentation
+
+▶️ How It Works
+🔸 Step 1: Input
+
+User enters two large numbers as strings.
+Each digit is stored in a separate node of a doubly linked list.
+
+🔸 Step 2: Operation Selection
+
+User chooses:
+1. Add 2. Subtract 3. Multiply 4. Divide 5. Exit
+
+🔸 Step 3: Processing
+
+Based on the selected operation, digit-by-digit arithmetic is performed using linked list traversal.
+
+🔸 Step 4: Output
+
+Final result is converted back from the linked list and displayed to the user.
+
+🖥 Sample Output
+Enter Number 1: 98765432101234567890
+Enter Number 2: 123456789
+
+------ MENU ------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter choice: 1
+
+Result: 98765432102369134679
